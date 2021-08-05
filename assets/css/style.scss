@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap');
 :root{
     --primary-bg-color :  hsl(237, 18%, 59%);
     --primary-text-color : hsl(345, 95%, 68%);
@@ -6,6 +7,8 @@
     --Very-dark-blue: hsl(235, 16%, 14%);
     --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
 }
-
+*{
+    font-family: 'Red Hat Text', sans-serif;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
