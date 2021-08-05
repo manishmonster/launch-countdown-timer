@@ -10,5 +10,30 @@
 *{
     font-family: 'Red Hat Text', sans-serif;
 }
+body{
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--Very-dark-blue);
+}
+.background-image-top,.background-image-bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.background-image-top {
+    top: 0;
+    height: 70vh;
+    object-position: 50% 100%;
+}
+.background-image-bottom {
+    bottom: 0;
+    height: 20vh;
+    object-position: 80% 0%;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
