@@ -1,0 +1,10 @@
+
+*.sketch
+*.fig
+
+*.xd
+.DS_Store
+.prettierignore
+
+#Avoiding upload of concept files in this folder
+/concept
