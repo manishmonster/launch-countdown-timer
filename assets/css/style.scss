@@ -6,7 +6,7 @@
     --Dark-desaturated-blue: hsl(236, 21%, 26%);
     --Very-dark-blue: hsl(235, 16%, 14%);
     --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
-    --padding-panel-block:0.4em;
+    --padding-panel-block:0.15em;
 }
 *{
     font-family: 'Red Hat Text', sans-serif;
@@ -16,7 +16,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background: var(--Very-dark-blue);
 }
 .background-image-top,.background-image-bottom{
@@ -59,7 +59,6 @@ body{
     
 }
 .panel-block {
-    
     position: relative;
     background: hsl(240,21.4%,22%);
     padding: var(--padding-panel-block);
@@ -67,6 +66,7 @@ body{
     border-radius: 1rem;
     color: var(--primary-text-color);
     overflow: hidden;
+    box-shadow: 0px 5px 0px 0px var(--Very-dark-mostly-black-blue);
     &::after {
         position: absolute;
         content: "";
@@ -102,6 +102,21 @@ body{
 }
 .panel-heading {
     color: var(--primary-bg-color);
+    font-size: 0.85rem;
+}
+.social-media{
+    width: max-content;
+    margin: 2em auto;
+    display: flex;
+    gap: 1rem;
+    .icon{
+        text-decoration: none;
+        color: var(--primary-bg-color);
+        font-size: 1.6rem;
+        &:hover{
+            color:var(--primary-text-color);
+        }
+    }
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

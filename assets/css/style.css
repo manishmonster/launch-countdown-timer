@@ -6,7 +6,7 @@
   --Dark-desaturated-blue: hsl(236, 21%, 26%);
   --Very-dark-blue: hsl(235, 16%, 14%);
   --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
-  --padding-panel-block:0.4em;
+  --padding-panel-block:0.15em;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: var(--Very-dark-blue);
 }
 
@@ -83,6 +83,8 @@ body {
   border-radius: 1rem;
   color: var(--primary-text-color);
   overflow: hidden;
+  -webkit-box-shadow: 0px 5px 0px 0px var(--Very-dark-mostly-black-blue);
+          box-shadow: 0px 5px 0px 0px var(--Very-dark-mostly-black-blue);
 }
 
 .panel-block::after {
@@ -124,6 +126,28 @@ body {
 
 .panel-heading {
   color: var(--primary-bg-color);
+  font-size: 0.85rem;
+}
+
+.social-media {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media .icon {
+  text-decoration: none;
+  color: var(--primary-bg-color);
+  font-size: 1.6rem;
+}
+
+.social-media .icon:hover {
+  color: var(--primary-text-color);
 }
 
 .attribution {
