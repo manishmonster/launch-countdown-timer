@@ -6,6 +6,7 @@
     --Dark-desaturated-blue: hsl(236, 21%, 26%);
     --Very-dark-blue: hsl(235, 16%, 14%);
     --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+    --padding-panel-block:0.4em;
 }
 *{
     font-family: 'Red Hat Text', sans-serif;
@@ -45,6 +46,62 @@ body{
     word-spacing: 0.15em;
     letter-spacing: 0.15em;
     margin: 3em 0;
+}
+.count-down {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em auto 4em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.panel-block {
+    
+    position: relative;
+    background: hsl(240,21.4%,22%);
+    padding: var(--padding-panel-block);
+    font-size: 4rem;
+    border-radius: 1rem;
+    color: var(--primary-text-color);
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: hsl(235.6,20.6%,25.7%);
+    }
+    span {
+        position: relative;
+        z-index: 10;
+        --widht-speator: 0.15em; 
+        --halve : var(--widht-speator)/2;
+        &::before,&::after {
+            position: absolute;
+            content: "";
+            width: var(--widht-speator);
+            height: var(--widht-speator);
+            background: var(--Very-dark-blue);
+            border-radius: 50%;
+            top: calc(50% - var( --halve));
+            z-index: 100;
+        }
+        &::before{
+            left: calc(0px - var( --halve) - var(--padding-panel-block));
+        }
+        &::after{
+            right: calc(0px - var( --halve) - var(--padding-panel-block));
+        }
+    }
+}
+.panel-heading {
+    color: var(--primary-bg-color);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
