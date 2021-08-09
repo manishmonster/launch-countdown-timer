@@ -28,6 +28,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -99;
 }
 
 .background-image-top {
@@ -39,9 +40,20 @@ body {
 
 .background-image-bottom {
   bottom: 0;
-  height: 20vh;
+  height: 35vh;
   -o-object-position: 80% 0%;
      object-position: 80% 0%;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--White);
+  word-spacing: 0.15em;
+  letter-spacing: 0.15em;
+  margin: 3em 0;
 }
 
 .attribution {

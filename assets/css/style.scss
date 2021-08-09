@@ -24,6 +24,7 @@ body{
     right: 0;
     width: 100%;
     object-fit: cover;
+    z-index: -99;
 }
 .background-image-top {
     top: 0;
@@ -32,8 +33,18 @@ body{
 }
 .background-image-bottom {
     bottom: 0;
-    height: 20vh;
+    height: 35vh;
     object-position: 80% 0%;
+}
+.h1 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--White);
+    word-spacing: 0.15em;
+    letter-spacing: 0.15em;
+    margin: 3em 0;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
